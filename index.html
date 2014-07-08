@@ -1,0 +1,60 @@
+---
+layout: plain
+title: Student Value Fund
+---
+
+<style>
+.jumbotron {
+    margin-bottom: 0px;
+    background-image: url(http://cdn.frontpagemag.com/wp-content/uploads/2013/07/New-York-City-Skyline.jpg);
+    background-position: 0% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+}
+
+#tagline {
+	text-align: right;
+}
+
+</style>
+
+<div class="jumbotron">
+    <div class="container">
+      <h1 id = "tagline">Invest in the future.</h1>
+      <a class="btn btn-primary btn-lg" role="button">Learn more</a><a class="btn btn-primary btn-lg" role="button">Apply</a>
+    </div>
+  </div>
+
+  <body>
+    <div class="container">
+      <div class="col-md-6">
+		<div id="home">
+		  <h1>Recent Posts</h1>
+		  <ul class="posts">
+		    {% for post in site.posts %}
+		      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+		    {% endfor %}
+		  </ul>
+		</div>
+		</div>
+        <div class="col-md-6">
+          <h3>What is SVF?</h3>
+          We are a student run fund whose purpose is to promote and explore the principles of value investing. Our mission is to develop and maintain a sustainable portfolio while providing members with robust knowledge of the financial markets.
+          <h3>What can you do on this site?</h3>
+          <ul id = "bullets">
+            <li>Read our latest market research and valuations</li>
+            <li>Familiarize yourself with our current holdings</li>
+            <li>See some of the cool things we are working on</li>
+            <li>Learn about the perks of being a part of SVF</li>
+            <li>Meet the members and find out how you can apply</li>
+          </ul>
+          <h3>Come to our weekly meeting!</h3>
+          <b>Open meeting</b>, Wednesday from 6:30 PM - 7:45 PM in <b>470 Dodge</b>.<br>
+          <b>Analyst only meeting</b>, Sunday from 6:30 PM - 7:45 PM.
+        </div>
+      </div>
+    </div><!-- /.container -->
+</body>
+<br><br>
