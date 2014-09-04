@@ -22,6 +22,10 @@
     color: #ffffff;
   }
 
+  #col-md-9 {
+    border-radius: 24px;
+  }
+
 </style>
 
 <html lang="en">
@@ -84,12 +88,22 @@
     <style>
 .jumbotron {
     margin-bottom: 0px;
-    background-image: url(http://cdn.frontpagemag.com/wp-content/uploads/2013/07/New-York-City-Skyline.jpg);
+    background-image: url(../images/banners/front-banner.png);
     background-position: 0% 50%;
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
     text-shadow: black 0.3em 0.3em 0.3em;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+  background-color: #61210B;
+  border-color: #61210B;
+ }
+
+.btn {
+  background-color: black;
+  border-color: black;
 }
 
 #tagline {
@@ -101,7 +115,7 @@
 <div class="jumbotron">
     <div class="container">
       <h1 id = "tagline">Invest in the future.</h1>
-      <a class="btn btn-primary btn-lg" role="button">Learn more</a><a class="btn btn-primary btn-lg" role="button">Apply</a>
+      <a class="btn btn-primary btn-lg" role="button" href="../about/index.html">Learn more</a><a class="btn btn-primary btn-lg" role="button" href="../apply/index.html">Apply</a>
     </div>
   </div>
 
@@ -112,7 +126,7 @@
 		  <h1>Recent Posts</h1>
 		  <ul class="posts">
 		    
-		      <li><span>28 Jun 2014</span> &raquo; <a href="/jekyll/update/2014/06/28/welcome-to-jekyll.html">Welcome to Jekyll!</a></li>
+		      <li><span>24 Sep 2014</span> &raquo; <a href="/svf/club/semester/2014/09/24/welcome-to-jekyll.html">Welcome Back!</a></li>
 		    
 		  </ul>
 		</div>
@@ -149,9 +163,9 @@
         </div>
         <div class="col-md-9">
           <h3 id = "header">Connect with us.</h3>
-          <img src = "http://www.mrpaultran.com/images/facebook.png" height = "48" width = "48"></img>
-          <img src = "http://classof2020.nl/wp-content/uploads/2014/04/twitter_Social-Media-Icons-Buttons-Modern_black_Ctrl-Alt-Design_001.png" height = "48" width = "48"></img>
-          <img src = "http://ctrla.lt/wp-content/uploads/2013/04/linkedin_Social-Media-Icons-Buttons-Modern_black_Ctrl-Alt-Design_001.png" height = "48" width = "48"></img>
+          <img src = "../images/social/facebook.png" height = "48" width = "48"></img>
+          <img src = "../images/social/twitter.png" height = "48" width = "48"></img>
+          <img src = "../images/social/linkedin.png" height = "48" width = "48"></img>
         </div>
         </div>
       </div>
